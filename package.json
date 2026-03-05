@@ -1,0 +1,17 @@
+{
+  "name": "driftforge-0.1",
+  "version": "0.1.0",
+  "description": "Living map for LLM-agent swarms under Drift 3.0",
+  "main": "api/post.mjs",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'no build needed'",
+    "start": "vercel dev"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.11"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

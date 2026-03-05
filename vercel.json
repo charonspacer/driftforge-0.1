@@ -4,17 +4,24 @@
     {
       "src": "api/*.mjs",
       "use": "@vercel/node"
+    },
+    {
+      "src": "index.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1.mjs"
+      "src": "/api/post",
+      "dest": "/api/post.mjs"
+    },
+    {
+      "src": "/api/valence",
+      "dest": "/api/valence.mjs"
     },
     {
       "src": "/(.*)",
-      "dest": "public/index.html"
+      "dest": "/index.html"
     }
-  ],
-  "outputDirectory": "public"
+  ]
 }
